@@ -40,7 +40,7 @@ def run_sim():
 
     while True:
         usage_count += random.randint(1, 10) 
-        msg = f"{{'device_id': '{dev_id}', 'usage': {usage_count}, 'date': '{date.today().strftime('%d-%m-%Y')}', 'time': '{datetime.now().strftime('%H:%M:%S')}'}}"
+        msg = f'{{"device_id": "{dev_id}", "usage": {usage_count}, "date": "{date.today().strftime("%d-%m-%Y")}", "time": "{datetime.now().strftime("%H:%M:%S")}"}}'
 
         publish(client, msg)
         time.sleep(10)

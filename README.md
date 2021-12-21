@@ -3,7 +3,7 @@ Repository for the MQTT Data Simulation. Publishes sample JSON data using the MQ
 
 ### mosquitto.conf
 Contains the startup configuration for Mosquitto \
-Run using `mosquitto -c mosquitto.conf`
+Run using `mosquitto -p 8003`
 
 ### mosquitto.log
 Logfile for Mosquitto

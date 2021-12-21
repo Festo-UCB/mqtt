@@ -1,0 +1,28 @@
+1640062719: mosquitto version 2.0.14 starting
+1640062719: Config loaded from ./mosquitto.conf.
+1640062719: Opening ipv4 listen socket on port 1883.
+1640062719: Error: Address already in use
+1640062728: mosquitto version 2.0.14 starting
+1640062728: Config loaded from ./mosquitto.conf.
+1640062728: Opening ipv4 listen socket on port 1883.
+1640062728: Error: Address already in use
+1640062748: mosquitto version 2.0.14 starting
+1640062748: Config loaded from ./mosquitto.conf.
+1640062748: Opening ipv4 listen socket on port 1883.
+1640062748: Error: Address already in use
+1640062847: mosquitto version 2.0.14 starting
+1640062847: Config loaded from ./mosquitto.conf.
+1640062847: Opening ipv4 listen socket on port 1883.
+1640062847: Error: Address already in use
+1640062875: mosquitto version 2.0.14 starting
+1640062875: Config loaded from ./mosquitto.conf.
+1640062875: Opening ipv4 listen socket on port 8883.
+1640062875: Opening ipv6 listen socket on port 8883.
+1640062875: mosquitto version 2.0.14 running
+1640062880: mosquitto version 2.0.14 terminating
+1640062881: mosquitto version 2.0.14 starting
+1640062881: Config loaded from ./mosquitto.conf.
+1640062881: Opening ipv4 listen socket on port 8883.
+1640062881: Opening ipv6 listen socket on port 8883.
+1640062881: mosquitto version 2.0.14 running
+1640062896: mosquitto version 2.0.14 terminating
