@@ -1,5 +1,5 @@
 # MQTT Client and Subscriber
-Repository for the MQTT Data Simulation. Publishes sample JSON data using the MQTT protocol and uploads it to the Influx Database for the purpose of querying with smart contracts from the [Rust Backend Repository](https://github.com/Festo-UCB/RustBackend). Sample data may not necessarily reflect the true data being produced by the IOT device.
+Repository for the MQTT Data Simulation. Publishes sample JSON data using the MQTT protocol and uploads it to the Influx Database for the purpose of querying with smart contracts from the [Rust Backend Repository](https://github.com/Festo-UCB/RustBackend). Sample data may not necessarily reflect the true data being produced by the IOT device. Dependent on Eclipse Paho MQTT. Install with `pip3 install paho-mqtt`.
 
 ### mosquitto.conf
 Contains the startup configuration for Mosquitto \
