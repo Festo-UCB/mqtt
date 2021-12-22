@@ -16,7 +16,7 @@ def make_payload(message: str):
     payload = []
     message_dict = json.loads(message)
     data = {
-        "measurement": "device-data",                       # similar to table name
+        "measurement": "device_data",                       # similar to table name
         "tags": {
             "device-id": f"{message_dict['device_id']}"     # similar to primary key
             },

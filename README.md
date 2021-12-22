@@ -17,18 +17,33 @@ sudo apt-get update && sudo apt-get install influx
 ```
 Start InfluxDB with `sudo service InfluxDB start`.
 
+```
+sudo vim /etc/influxdb/influxdb.conf
+```
+Find the `auth-enabled = false` line. Remove the `#` to uncomment it. Use:
+```
+sudo systemctl restart influxdb
+```
+to restart the database with this new configuration.
+
+
 ## Starting the MQTT Services
 In seperate terminals run:
 ```
-mosquitto -p 8003
+mosquitto -p 8002
 python3 mqtt_client.py
 python3 mqtt_sub.py
 ```
 
+## Navigating the Database 
+Enter the database with `$ influx`. Exit the database with `> quit`. \
+Show databases with `> SHOW DATABASES`. After running the python script `mqtt_sub.py` you should see the database `PuPPY`. \
+Check the contents of the table using `SELECT * FROM 'device_data'`. Confirm that the data thrown from `mqtt_client.py` is populating the database.
+
 ## Repository File Descriptions
 #### mosquitto.conf
 Contains the startup configuration for Mosquitto \
-Run using `mosquitto -p 8003`
+Run using `mosquitto -p 8002`. This port can be changed in the `constants.py` file if `8002` is use.
 
 #### mosquitto.log
 Logfile for Mosquitto
