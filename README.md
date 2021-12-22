@@ -3,10 +3,10 @@
 Repository for the MQTT Data Simulation. Publishes sample JSON data using the MQTT protocol and uploads it to the Influx Database for the purpose of querying with smart contracts from the [Rust Backend Repository](https://github.com/Festo-UCB/RustBackend). Sample data may not necessarily reflect the true data being produced by the IOT device. Dependent on Eclipse Paho MQTT and InfluxDB. Install with `pip3 install paho-mqtt` and `pip install influxdb`.
 
 ## Installing Mosquitto Broker
-This depends on Mosquitto as an MQTT broker. Install using []directions](https://mosquitto.org/download/). Available on Linux distributions with `snap install mosquitto`. Available on Mac using `brew install mosquitto`.
+This depends on Mosquitto as an MQTT broker. Install using [directions](https://mosquitto.org/download/). Available on Linux distributions with `snap install mosquitto`. Available on Mac using `brew install mosquitto`.
 
 ## Starting the Database
-InfluxDB install documentation: https://docs.influxdata.com/influxdb/v1.8/introduction/install/ \
+InfluxDB install [documentation](https://docs.influxdata.com/influxdb/v1.8/introduction/install/). Ubuntu instructions below. \
 Install Database:
 ```
 wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
