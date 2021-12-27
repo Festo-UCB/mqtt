@@ -18,11 +18,11 @@ def make_payload(message: str):
     data = {
         "measurement": "device_data",                       # similar to table name
         "tags": {
-            "device-id": f"{message_dict['device_id']}"     # similar to primary key
+            "device_id": f"{message_dict['device_id']}"     # similar to primary key
             },
         "time": datetime.now(),                             # times series database needs timestamp
         "fields": {                                         # data from the iot device
-            "usage": f"{message_dict['usage']}",
+            "usage": message_dict['usage'],
             "transaction_date": f"{message_dict['date']}",
             "transaction_time": f"{message_dict['time']}"
             }
