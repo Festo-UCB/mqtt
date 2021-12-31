@@ -16,12 +16,10 @@ def make_payload(message: str):
     payload = []
     message_dict = json.loads(message)
     data = {
-        "measurement": "device_data",                       # similar to table name
-        "tags": {
-            "device_id": f"{message_dict['device_id']}"     # similar to primary key
-            },
+        "measurement": "device_data",                       # similar to table name 
         "time": datetime.now(),                             # times series database needs timestamp
         "fields": {                                         # data from the iot device
+            "device_id": f"{message_dict['device_id']}", 
             "usage": message_dict['usage'],
             "transaction_date": f"{message_dict['date']}",
             "transaction_time": f"{message_dict['time']}"
